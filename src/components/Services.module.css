@@ -1,0 +1,111 @@
+.services {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    max-height: 500px;
+
+}
+.services1 {
+    max-width: 50%;
+}
+.services h2{
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-left: 150px;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.services1 h2:nth-child(1) { 
+    margin-top: 300px; 
+color: white;
+font-size: 35px;
+}
+.services h2:nth-child(2){
+    color: #04eaf7;
+    font-size: 35px;
+
+}
+.services p{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 150px;
+    text-align: left;
+    color: grey;
+    font-family: 'Black Ops One', sans-serif;
+}
+.servicecards {
+    display: grid;
+    grid-template-columns:repeat(2,150px) ; /* Deux colonnes */
+    gap: 70px; /* Espacement entre les cartes */
+    margin-left: 880px;
+    margin-top: 40px;
+    position: relative;
+    top: -350px;
+   
+}
+
+.cardcard1 {
+    background-image: url("../backgroundimage/d3.jpg");
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.cardcard2 {
+   background-image: url("../backgroundimage/futuristic5gwirelessnetworkairobothandtapwifiicon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.cardcard3 {
+    background-image: url("../backgroundimage/futuristic5gwirelessnetworkairobothandtapwifiicon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.cardcard4 {
+   background-image: url("../backgroundimage/electronics.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+
+.services button {
+    background-color: #000000;
+    color: rgb(2, 225, 254);
+    padding: 0.5rem 1.5rem;
+    border:0 0 10px solid rgb(0, 251, 255);
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 50px;
+    font-size: 1cap;
+    width: 150px;
+    position: relative;
+    bottom: 570px;
+    right : 320px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
+}
+.services button:hover {
+    transform: scale(1.2); /* Agrandit le bouton à 120% */
+    /* Change la couleur de fond au survol */
+}

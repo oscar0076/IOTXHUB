@@ -1,0 +1,46 @@
+.logo {
+    display: flex;            /* Aligns logo image and text in a row */
+    align-items: center;      /* Centers logo text vertically with the image */
+    gap: 0.5rem;              /* Adds space between logo image and text */
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Arrange les éléments en colonne par défaut */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  footer div {
+    display: flex; 
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  
+  footer div img {
+    margin: 0 5px;
+    right: 100px;
+  }
+
+  footer .logo{
+    position:relative;
+    left: 1200px;
+  }
+  footer>p{
+    position: relative;
+    right: 500px;
+    top: 20px;
+    color: rgb(98, 98, 98);
+  }
+  footer div .cc {
+    margin-right:1000px ;
+    position: relative;
+    color: rgb(104, 104, 104);
+  }
+  footer .border{
+    border: 0.5px solid #04eaf7;
+  }

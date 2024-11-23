@@ -1,0 +1,39 @@
+.whychoose {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.whychoose h2{
+    display: inline-block;
+    top: 30px;
+    font-size: 40px;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.whychoose h2:nth-child(1) {
+color: white;
+}
+.whychoose h2:nth-child(2){
+    color: #04eaf7;
+}
+.whychoose .features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 40px;
+                                             
+}
+.feature {
+    background-color: #1b263b;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 250px;
+    border: solid cyan 0.1pt;
+    
+    background: -webkit-linear-gradient(45deg, #001719,#011719,#214b4f);/* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #001719,#011719,#214b4f);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.features .feature img{
+margin-left: -200px;
+margin-bottom: 5px;
+}

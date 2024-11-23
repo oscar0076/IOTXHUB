@@ -1,0 +1,53 @@
+header {
+    background-color: #0d1b2a;
+    color: white;
+    padding: 1rem;
+}
+header nav {
+    display: flex;            /* Enables horizontal alignment */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; 
+    /* Centers items vertically */
+}
+.logo {
+    display: flex;            /* Aligns logo image and text in a row */
+    align-items: center;      /* Centers logo text vertically with the image */
+    gap: 0.5rem;              /* Adds space between logo image and text */
+}
+nav ul {
+    display: flex;            /* Aligns navigation links horizontally */
+    list-style: none;         /* Removes default list styling */
+    gap: 1rem;                /* Adds space between each link */
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: cyan;            /* Change text color to cyan on hover */
+    transition: color 0.3s ease;  /* Smooth transition effect */
+}
+.searchBar input[type="text"] {
+    background-color: black;  /* Set background to black */
+    color: white;             /* Set text color to white */
+    padding: 4px;            /* Add some padding for better visual */
+    border: 0px solid #04eaf7;   /* Optional: add a border around the input */
+    border-radius: 20px;       /* Optional: rounded corners for the input field */
+    box-shadow: inset 0 -2px 5px rgba(0, 255, 255, 0.7); /* 3D cyan shadow */
+    transition: all 0.3s ease; /* Smooth transition on focus */
+}
+
+.searchBar input[type="text"]::placeholder {
+    color: gray;              /* Set placeholder text color to gray */
+}
+
+.searchBar input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8); /* Enhanced shadow on focus */
+    outline: none;            /* Remove outline on focus */
+}
+.searchBar img {
+    margin-left: 5px;
+    
+}

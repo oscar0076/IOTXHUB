@@ -1,0 +1,49 @@
+.testimonials {
+    
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: #01494d solid thin;
+   
+}
+.testimonialcards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.testimonial {
+    background-color: #1b263b;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 0.5rem;
+}
+.testimonials h2 +h2{
+    font-size: 2.5rem; /* Taille exacte ajustée */
+    font-weight: bold;
+    text-align: center;
+    color: #04eaf7; /* Couleur cyan comme sur l'image */
+    margin-bottom: 6rem; /* Espacement au-dessous */
+}
+.testimonialcards {
+    display: flex;
+    justify-content: space-around; /* Distribution uniforme */
+    gap: 2rem; /* Ajustement entre les cartes */
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Pour bien s'adapter sur mobile */
+}
+.testimonial {
+    background: #011719; /* Couleur de fond sombre */
+    border: 2px solid #04eaf7; /* Bordure cyan pour chaque carte */
+    border-radius: 1rem; /* Coins arrondis */
+    padding: 2rem;
+    width: 300px; /* Largeur ajustée à l'image */
+    box-shadow: 0 5px 15px rgba(0, 234, 255, 0.3); /* Effet d'ombre élégant */
+    color: white;
+    text-align: center; /* Centrer le contenu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
