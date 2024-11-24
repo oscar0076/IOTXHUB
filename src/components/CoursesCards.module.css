@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;      /* Centre verticalement (si nécessaire) */
+    height: 100vh;            /* Hauteur de la fenêtre pour centrer verticalement */
+}
+.CoursesCards{
+    color: aliceblue;
+    
+    display: grid;
+    grid-template-rows:repeat(2,200px) ; /* Deux colonnes */
+    grid-template-columns:repeat(3,200px) ; /* Deux colonnes */
+    gap: 50px; /* Espacement entre les cartes */
+    position:relative;
+    row-gap: 120px;    /* Espacement vertical entre les lignes */
+     margin-bottom: 60px; /* Évite le chevauchement avec la partie suivante */
+}
+.coursecard1 {
+    background-image: url("../backgroundimage/d3.jpg");
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.coursecard2 {
+    background-image: url("../backgroundimage/courses/futuristiSmartCityWith5gGlobalNetworkTechnology.jpg");
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.coursecard3 {
+    background-image: url("../backgroundimage/electronics.jpg");
+background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.coursecard4 {
+    background-image: url("../backgroundimage/futuristic5gwirelessnetworkairobothandtapwifiicon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+.coursecard5 {
+    background-image: url("../backgroundimage/courses/3060853.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 180px;
+}
+
+.CoursesCards p {
+         /* Position en bas de la carte */
+    font-family: 'Black Ops One', sans-serif;
+    
+}
+.coursecard1:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
+.coursecard2:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
+.coursecard3:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
+.coursecard4:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
+.coursecard5:hover {
+    transform: translateY(-10px); /* Animation au survol */
+    box-shadow: 0 10px 20px rgba(0, 234, 255, 0.5); /* Ombre renforcée */
+}
+
+.hovertext {
+    position: absolute;
+    bottom: 20px;          /* Position en bas de la carte */
+    left: 30%;          /* Centrage horizontal */
+    transform: translateX(-50%);  /* Centrage précis */
+    opacity: 0;            /* Texte caché par défaut */
+    color: white;
+    font-size: 1rem;
+    
+    
+    
+    font-family: 'Black Ops One', sans-serif;
+}
+.coursecard1:hover .hovertext,
+.coursecard2:hover .hovertext,
+.coursecard3:hover .hovertext,
+.coursecard4:hover .hovertext,
+.coursecard5:hover .hovertext {
+    opacity: 1;  /* Rendre le texte visible au survol */
+}

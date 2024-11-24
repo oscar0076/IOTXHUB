@@ -2,7 +2,7 @@
     
     color: white;
     padding: 3rem 1rem;
-    text-align: center;
+    
     border-bottom: #01494d solid thin;
    
 }
@@ -17,10 +17,17 @@
     width: 150px;
     border-radius: 0.5rem;
 }
+.testimonials h2{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 2.5rem;
+    margin-left: 150px;
+}
 .testimonials h2 +h2{
     font-size: 2.5rem; /* Taille exacte ajustée */
     font-weight: bold;
-    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
     color: #04eaf7; /* Couleur cyan comme sur l'image */
     margin-bottom: 6rem; /* Espacement au-dessous */
 }
