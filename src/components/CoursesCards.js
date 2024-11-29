@@ -6,7 +6,7 @@ const CoursesCards = () => {
       <div className={styles.container}>
         <div className={styles.CoursesCards}>
        
-          <div className={styles.coursecard1}><p>Autonomous<br/>Robotics</p><span className={styles.hovertext}>Start Now</span></div>
+          <div className={styles.coursecard1}><a><p>Autonomous<br/>Robotics</p><span className={styles.hovertext}>Start Now</span></a></div>
           <div className={styles.coursecard2}><p>Advanced IOT</p><span className={styles.hovertext}>Start Now</span></div>
           <div className={styles.coursecard3}><p>Electronics</p><span className={styles.hovertext}>Start Now</span></div>
           <div className={styles.coursecard4}><p>Wireless Communication</p><span className={styles.hovertext}>Start Now</span></div>

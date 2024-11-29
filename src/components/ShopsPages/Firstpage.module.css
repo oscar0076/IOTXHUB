@@ -1,0 +1,63 @@
+.equiplist {
+    margin-top: 150px;
+}
+.equiplist p {
+    color: white;
+    text-align: center;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 3cap;
+}
+
+.equipmentlist {
+        display: flex;
+        justify-content: space-between; /* Distributes elements evenly with space between them */
+        align-items: center; /* Aligns items vertically in the center */
+        gap: 5px; /* Adds consistent spacing between items */
+        padding: 30px; /* Optional: Adds padding around the container */
+        margin-top: 50px;
+    }
+.eqCard {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .eqCard img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+ 
+  
+  .eqCard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .eqCard .eqName {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .eqCard:hover .overlay {
+    opacity: 1;
+  }
+
+  

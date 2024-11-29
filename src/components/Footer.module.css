@@ -1,46 +1,68 @@
-.logo {
-    display: flex;            /* Aligns logo image and text in a row */
-    align-items: center;      /* Centers logo text vertically with the image */
-    gap: 0.5rem;              /* Adds space between logo image and text */
-}
 footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column; /* Arrange les éléments en colonne par défaut */
-    align-items: center; /* Centre les éléments horizontalement */
-    text-align: center; /* Centrer le texte */
-  }
+  background-color: #101010; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+  padding: 20px 10px; /* Spacing inside the footer */
+   /* Center-align text by default */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
   
-  footer div {
-    display: flex; 
-    width: 100%; 
-    margin-bottom: 20px; 
-  }
+}
 
+footer p {
+  margin: 5px 0; /* Minimal spacing between paragraphs */
+}
+.Copyright {
+  display: flex;
+  color: rgb(122, 122, 122);
+}
+.Copyright p:nth-of-type(2) {
+  position: relative;
+  left: 24%;
+}
+footer .logo {
+  display: flex;
+   /* Align text and image vertically */
+  justify-content: center; /* Center the content */
+  gap: 10px; /* Add spacing between text and the logo */
+  margin: 15px 0;
+  margin-left: 38%;
   
-  footer div img {
-    margin: 0 5px;
-    right: 100px;
-  }
+}
 
-  footer .logo{
-    position:relative;
-    left: 1200px;
-  }
-  footer>p{
-    position: relative;
-    right: 500px;
-    top: 20px;
-    color: rgb(98, 98, 98);
-  }
-  footer div .cc {
-    margin-right:1000px ;
-    position: relative;
-    color: rgb(104, 104, 104);
-  }
-  footer .border{
-    border: 0.5px solid #04eaf7;
-  }
+footer .logo img {
+  height: 30px; /* Ensures the logo height matches your requirement */
+}
+
+footer .cc {
+  
+  align-items: center;
+  
+  flex-wrap: wrap; /* Wrap content if screen is narrow */
+  gap: 10px; /* Spacing between copyright text and icons */
+  margin-top: 15px;
+  display: flex;
+}
+
+footer .cc img {
+  height: 20px; /* Uniform height for social media icons */
+  width: 20px; /* Ensures square icons */
+  cursor: pointer; /* Changes cursor to indicate clickable icons */
+  transition: transform 0.2s ease-in-out; /* Add smooth hover effect */
+}
+
+footer .cc img:hover {
+  transform: scale(1.2); /* Enlarge icons slightly on hover */
+}
+
+footer a {
+  color: #ffffff; /* Links in the footer should match text color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.2s ease-in-out; /* Smooth transition for hover */
+}
+footer .cc p {
+  margin-left: 10px;
+}
+footer a:hover {
+  color: #00bcd4; /* Change color on hover (e.g., teal) */
+}
+
