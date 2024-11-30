@@ -50,7 +50,7 @@
      max-width: 50%;
      margin-top: 70px;                   /* Limit the width of the text area */
  }
- .hero button {
+ .hero link button {
      background-color: #000000;
      color: rgb(2, 225, 254);
      padding: 0.2rem 1.5rem;
@@ -64,12 +64,13 @@
      
      box-shadow: 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
  }
- .hero button:hover {
+ .hero link button:hover {
      transform: scale(1.2); /* Agrandit le bouton à 120% */
      
  }
  .hero2 {
      display: flex;
+     margin-left: 90px;
  }
  .mitin {
      margin-left: 42px;

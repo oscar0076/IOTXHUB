@@ -17,6 +17,7 @@
 }
 .coursecard1 {
     background-image: url("../backgroundimage/d3.jpg");
+    
 background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

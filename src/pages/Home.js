@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials';
 import IconsSection from '../components/IconsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+
 import Group57Image from '../backgroundimage/Group57.png';
 import d3 from '../backgroundimage/d3.jpg';
 import futuristic5gwirelessnetworkairobothandtapwifiicon from '../backgroundimage/futuristic5gwirelessnetworkairobothandtapwifiicon.jpg'

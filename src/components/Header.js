@@ -15,7 +15,7 @@ function Header() {
           <li><a href="Courses">Courses</a></li>
           <li><a href="#">Community</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="LogIn">Login</a></li>
         </ul>
         <div className={styles.searchBar}>
           <input type="text" placeholder="Search..." />

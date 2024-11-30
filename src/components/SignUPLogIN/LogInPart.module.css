@@ -1,0 +1,93 @@
+
+.Log {
+        display: flex;
+        justify-content: center; /* Centre le bloc horizontalement */
+        align-items: center; /* Centre le bloc verticalement si nécessaire */
+        height: 100vh; /* Ajuste la hauteur à la fenêtre visible */
+        
+      }
+      
+      .Bloc {
+        position: relative; /* Position relative pour positionner les éléments internes */
+        width: fit-content; /* Ajuste la largeur selon l'image */
+      }
+      
+      .Bloc img {
+        display: block; /* Empêche les marges par défaut des images */
+        width: 100%; /* Ajuste la largeur de l'image au conteneur */
+      }
+      
+      form {
+        position: absolute; /* Place le formulaire au-dessus de l'image */
+        top: 50%; /* Centre verticalement */
+        left: 50%; /* Centre horizontalement */
+        transform: translate(-50%, -50%); /* Centre parfaitement l'élément */
+        display: flex;
+        flex-direction: column; /* Organise les champs verticalement */
+        align-items: center; /* Centre les champs horizontalement */
+        
+        padding: 20px;
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+        
+      }
+      
+      form div {
+        margin-bottom: 15px; /* Espacement entre les champs */
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: 'Black Ops One', sans-serif;
+      }
+      
+      input {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Black Ops One', sans-serif;
+      }
+      
+      button {
+        background-color: #000000;
+        color: rgb(2, 225, 254);
+        padding: 1rem 1.5rem;
+        border: solid rgb(0, 251, 255);
+        cursor: pointer;
+        border-radius: 50px;
+        font-size: 1.5cap;
+        width: 150px;
+        box-shadow: inset 0 0 10px rgba(0, 255, 255, 1), 0 4px 15px rgba(0, 255, 255, 0.8);
+      }
+      
+      button:hover {
+        transform: scale(1.2); /* Agrandit le bouton à 120% */
+        background-color: #029dbd; /* Change la couleur de fond au survol */
+      }
+      
+      .SignUpSection {
+        color: white;
+       right: 390px;
+        top: 350px; /* Ajoute de l'espace par rapport au bloc */
+        position: relative;
+        
+      }
+
+.SignUpSection p {
+        font-family: 'Black Ops One', sans-serif;
+        font-size: 30px;
+        right: 40px;
+        position: relative;
+      }
+      @media screen and (max-width: 768px) {
+        form {
+            width: 90%;  /* Réduit la largeur du formulaire sur les petits écrans */
+        }
+        .SignUpSection p {
+            font-size: 20px;  /* Réduit la taille de la police sur les petits écrans */
+        }
+    }
+    
