@@ -4,7 +4,9 @@
         justify-content: center; /* Centre le bloc horizontalement */
         align-items: center; /* Centre le bloc verticalement si nécessaire */
         height: 100vh; /* Ajuste la hauteur à la fenêtre visible */
-        
+        position: relative;
+        left: 150px;
+
       }
       
       .Bloc {

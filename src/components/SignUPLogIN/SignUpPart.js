@@ -6,21 +6,25 @@ const SignUpPart = () => {
             <section className={style.Bloc}>
             <img src="/images/login/Capture.png" alt="Bloc" />
             <form action="SignUp">
-                <div>
-                    <label htmlFor="text">Name :</label>
-                    <input type="text"  required/>
+                <div className={style.NameContainer}>  
+                    <div>
+                        <label htmlFor="text">Name :</label>
+                        <input type="text"  required name='Name'/>
+                    </div>
+                    <div>
+                        <label htmlFor="text">Last Name :</label>
+                        <input type="text"  required name='LastName'/>  
+                    </div>
                 </div>
-                <div>
-                <label htmlFor="text">Last Name :</label>
-                <input type="text"  required/>  
-                </div>
-                <div>
+            <div className={style.SecondPart}>
+            <div>
                 <label htmlFor="email">Email : </label>
-                <input type="email" placeholder='Email' required />
+                <input type="email" placeholder='Email' required  />
             </div>
             <div>
                 <label htmlFor="password"  >Password :</label>
                 <input type="password"  required />
+            </div>
             </div>
             <div>
               <button type='submit'>Create Account</button>

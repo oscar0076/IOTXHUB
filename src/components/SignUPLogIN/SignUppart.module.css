@@ -43,7 +43,7 @@ label {
     font-weight: bold;
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: rgb(151, 150, 157);
 }
 
 input {
@@ -56,7 +56,27 @@ input {
     margin-bottom: 10px; /* Espacement entre le champ et le bouton */
 }
 
-button {
+input[name="Name"],input[name="LastName"]{
+    width: 50%;
+  
+ 
+}
+.NameContainer{
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    right: 6%;
+    bottom: 5px;
+}
+.SecondPart{
+position: relative;
+bottom: 120px;
+right: 28%;
+
+}
+
+.Sign div button {
     background-color: #029dbd;
     color: white;
     padding: 12px;
@@ -66,9 +86,12 @@ button {
     cursor: pointer;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 200px;
+    left: 100px;
 }
 
-button:hover {
+.Sign div button:hover {
     background-color: #02799e; /* Couleur de fond lors du survol */
     transform: scale(1.05); /* Agrandit légèrement le bouton */
 }
