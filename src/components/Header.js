@@ -14,7 +14,7 @@ function Header() {
           <li><a href="Shops">Shop</a></li>
           <li><a href="Courses">Courses</a></li>
           <li><a href="#">Community</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="Contact">Contact</a></li>
           <li><a href="LogIn">Login</a></li>
         </ul>
         <div className={styles.searchBar}>

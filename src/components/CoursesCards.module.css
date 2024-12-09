@@ -118,3 +118,9 @@ background-size: cover;
 .coursecard5:hover .hovertext {
     opacity: 1;  /* Rendre le texte visible au survol */
 }
+.CoursesCards p {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Hérite de la couleur du parent */
+    display: block; /* Rend tout le contenu du lien cliquable */
+    width: 100%; /* Assure que le lien occupe toute la largeur du parent */
+}

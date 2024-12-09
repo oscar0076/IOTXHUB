@@ -1,0 +1,94 @@
+.ContactPart2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    
+}
+
+
+
+/* Section des informations */
+.ContactPart2 > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    top: 250px;
+}
+
+.ContactPart2 img {
+    margin: 10px;
+    width: 40px;
+}
+
+/* Styles spécifiques pour le formulaire */
+.Message {
+    background-color: rgba(0, 100, 100, 0.5); /* Boîte semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Effet de glow */
+    position: relative;
+    margin-left: 100%;
+
+}
+
+.Message div {
+    margin-bottom: 15px;
+}
+
+.Message input,.Message textarea {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Message button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Message button:hover {
+    background-color: #00cccc;
+}
+
+/* Section des réseaux sociaux */
+.ContactPart2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ContactPart2 img[src*="facebook-app-symbol"],
+.ContactPart2 img[src*="instagram"],
+.ContactPart2 img[src*="twitter"],
+.ContactPart2 img[src*="youtube"] {
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.ContactPart2 img[src*="facebook-app-symbol"]:hover,
+.ContactPart2 img[src*="instagram"]:hover,
+.ContactPart2 img[src*="twitter"]:hover,
+.ContactPart2 img[src*="youtube"]:hover {
+    transform: scale(1.2); /* Zoom au survol */
+}
+
+/* Ajout de marges entre les blocs */
+
+div .info{
+position: relative;
+margin-right: 50%;
+
+}

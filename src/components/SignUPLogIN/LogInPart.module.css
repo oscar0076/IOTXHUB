@@ -21,7 +21,7 @@
       
       form {
         position: absolute; /* Place le formulaire au-dessus de l'image */
-        top: 50%; /* Centre verticalement */
+        top: 35%; /* Centre verticalement */
         left: 50%; /* Centre horizontalement */
         transform: translate(-50%, -50%); /* Centre parfaitement l'élément */
         display: flex;

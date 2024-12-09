@@ -5,6 +5,8 @@ import Courses from './pages/Courses.js';
 import Shops from './pages/Shops.js';
 import SignUp from './pages/SignUp.js';
 import Login from './pages/LogIn.js';
+import Contact from './pages/Contact.js';
+import IOTCourse from './pages/CoursesPages/IOTCourse.js'
 function App() {
   return (
    <BrowserRouter>
@@ -15,6 +17,8 @@ function App() {
       <Route path='/Shops' element={<Shops />}/>
       <Route path='/LogIn' element={<Login/>}/>
       <Route path='/SignUp' element={<SignUp/>} />
+      <Route path='/Contact' element={<Contact/>} />
+      <Route path='/IOTCourse' element={<IOTCourse/>} />
    </Routes>
    </BrowserRouter>
   );
