@@ -1,0 +1,77 @@
+/* Style global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Conteneur principal */
+.IotContainer {
+    padding: 20px;
+}
+
+/* Header */
+.IotHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #003, #00a);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.IotTitle {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+
+/* Section Suggestions */
+.IotSuggestions {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.Highlight {
+    color: #00ffff;
+    font-weight: bold;
+}
+
+/* Section Courses */
+.IotCourses {
+    text-align: center;
+}
+
+.CoursesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.CourseItem {
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.CourseItem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.CourseItem p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.CourseItem:hover {
+    transform: scale(1.05);
+    background: #222;
+}

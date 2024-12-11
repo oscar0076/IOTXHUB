@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './Iot.module.css'
 
 const Iot = () => {
@@ -27,21 +27,18 @@ const Iot = () => {
                 <div className={style.CoursesGrid}>
                     <div className={style.CourseItem}>
                         <img src="/images/120da7c6a8dbd0bfe923f659a6ab951b.jpg" alt="Course 1" />
-                        <p><a href="https://drive.google.com/drive/folders/1E5pR3fdBSgJ3q3-zAZA6zNJavBQEKbkI">Course 1</a> </p>
+                        <p><a href="http://localhost:5000/cours/IOTforbeginners.pdf" target="_blank" rel="noopener noreferrer">Course 1</a> </p>
                        
                     </div>
                     <div className={style.CourseItem}>
                         <img src="/images/120da7c6a8dbd0bfe923f659a6ab951b.jpg" alt="Course 2" />
-                        <p>Course 2</p>
+                        <p><a href="http://localhost:5000/cours/AdvancedIoTCourse.pdf" target="_blank" rel="noopener noreferrer">Course 2</a></p>
                     </div>
                     <div className={style.CourseItem}>
                         <img src="/images/120da7c6a8dbd0bfe923f659a6ab951b.jpg" alt="Course 3" />
-                        <p>Course 3</p>
+                        <p><a href="http://localhost:5000/cours/AdvancedIotProject.pdf" target="_blank" rel="noopener noreferrer">Course 3</a></p>
                     </div>
-                    <div className={style.CourseItem}>
-                        <img src="/images/120da7c6a8dbd0bfe923f659a6ab951b.jpg" alt="Evaluation" />
-                        <p>Evaluation</p>
-                    </div>
+                    
                 </div>
             </section>
         </div>

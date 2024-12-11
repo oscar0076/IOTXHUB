@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Testimonials from '../components/Testimonials';
@@ -10,22 +11,23 @@ import CoursesCards from '../components/CoursesCards';
 import '../stylehome.css';
 
 const Courses = () => {
-    return (
+  const history = useNavigate();
+
+
+
+  return (
     <div className="App">
       <Header />
       <main>
-      <RobotCourses />
-      <CoursesCards />
-      <Testimonials />
-      <IconsSection />
-      <ContactSection />
+        <RobotCourses />
+        <CoursesCards />
+        <Testimonials />
+        <IconsSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
-    );
-            
-        
-
+  );
 };
 
 export default Courses;

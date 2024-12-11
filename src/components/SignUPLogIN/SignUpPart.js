@@ -1,30 +1,43 @@
 import React from 'react';
 import { useState } from 'react';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
 
-import auth from '../../Firebase';
 import style from './SignUppart.module.css'
 const SignUpPart = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [name, setName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [successMessage, setSuccessMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-
+    const [formData, setFormData] = useState({
+        name: '',
+        lastName: '',
+        email: '',
+        password: '',
+    });
+    const [message, setMessage] = useState('');
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setMessage(''); // Réinitialiser les messages
+        const { name, lastName, email, password } = formData;
+
         try {
-          const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-          const user = userCredential.user;
-          
-          setSuccessMessage("Account created successfully!");
-          // Vous pouvez ajouter d'autres étapes comme enregistrer le nom complet dans la base de données
+            const response = await fetch('http://localhost:5000/api/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, lastName, email, password }),
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                setMessage(result.message); // Afficher le message de succès
+            } else {
+                const error = await response.json();
+                setMessage(error.error); // Afficher le message d'erreur
+            }
         } catch (error) {
-          
-          setErrorMessage(error.message);
+            console.error('Erreur lors de l\'inscription :', error);
+            setMessage('Une erreur est survenue. Veuillez réessayer.');
         }
-      };
+    };
+
     return (
         <div className={style.Sign}>
             <section className={style.Bloc}>
@@ -33,21 +46,21 @@ const SignUpPart = () => {
                 <div className={style.NameContainer}>  
                     <div>
                         <label htmlFor="text">Name :</label>
-                        <input type="text"  required name='Name' value={name} onChange={(e) => setName(e.target.value)}/>
+                        <input type="text" name="name" required value={formData.name} onChange={handleChange}  />
                     </div>
                     <div>
                         <label htmlFor="text">Last Name :</label>
-                        <input type="text"  required name='LastName' value={lastName} onChange={(e) => setLastName(e.target.value)} />  
+                        <input type="text" name="lastName" required value={formData.lastName} onChange={handleChange} />  
                     </div>
                 </div>
             <div className={style.SecondPart}>
             <div>
                 <label htmlFor="email">Email : </label>
-                <input type="email" placeholder='Email' required value={email} onChange={(e)=>setEmail(e.target.value)} />
+                <input type="email" name="email" required value={formData.email} onChange={handleChange}  />
             </div>
             <div>
                 <label htmlFor="password"  >Password :</label>
-                <input type="password"  required  value={password} onChange={(e)=>setPassword(e.target.value)} />
+                <input type="password" name="password" required value={formData.password} onChange={handleChange} />
             </div>
             </div>
             <div>
@@ -55,7 +68,7 @@ const SignUpPart = () => {
               </div>
             </form>
 
-
+            {message && <p>{message}</p>} {/* Afficher le message */}
             </section>
 
 
