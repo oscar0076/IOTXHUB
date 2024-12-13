@@ -21,7 +21,8 @@ const LogInPart = () => {
             const data = await response.json();
 
             if (response.ok) {
-                // Login réussi, rediriger vers la page Home
+                localStorage.setItem('isLoggedIn', 'true');
+                
                 navigate('/home');
             } else {
                 // Afficher le message d'erreur

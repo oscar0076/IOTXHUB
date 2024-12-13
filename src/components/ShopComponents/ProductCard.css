@@ -1,0 +1,134 @@
+/* Styling for the product card */
+.product-card {
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  align-items: center; /* Center all child elements horizontally */
+  background-color: #040000;
+  border: 1px solid #00f2ff;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%; /* Ensure consistent height for all cards */
+}
+
+/* Image styling inside the card */
+.product-card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 12px;
+}
+
+/* Title of the product */
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+/* Description of the product */
+.product-card p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 6px 0;
+}
+
+/* Styling for the 'Buy Now' button */
+.product-card button {
+  background-color: #000000;
+  color: #fff;
+  border: solid cyan;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  align-self: center; /* Center the button horizontally */
+  margin-top: 12px; /* Provide some space above the button */
+}
+
+.product-card button:hover {
+  background-color: #003757;
+}
+
+/* Modal overlay (background behind modal) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure modal is on top */
+}
+
+/* Modal content (the actual form box) */
+.modal-content {
+  background-image: url('./../../backgroundimage/modal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 8px;
+  border: none; /* Remove the solid border */
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0 0 10px 3px cyan; /* Shadow effect resembling a glowing border */
+}
+
+
+.modal-content h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #01b6b9;
+  font-family: 'Black Ops One', sans-serif;
+}
+
+.modal-content form {
+  margin-top: 150px; 
+
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+/* Input fields styling in the modal */
+.modal-content input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #00b9c7;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Confirm purchase button inside the modal */
+.modal-content button {
+  background-color: #010004;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.modal-content button:hover {
+  background-color: #0092b3;
+}
+
+/* Close button inside the modal */

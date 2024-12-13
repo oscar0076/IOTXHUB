@@ -10,6 +10,9 @@ import IOTCourse from './pages/CoursesPages/IOTCourse.js'
 import Electronics from './pages/CoursesPages/Electronics';
 import Robots from './pages/CoursesPages/RobotsCourse.js';
 import ProtectedRoute from './components/ProtectedRoute.js' ;
+import SensorsPage from './components/ShopsPages/SensorsPage.js';
+import MicrocontrollersPage from './components/ShopsPages/MicrocontrollersPage.js';
+import MotorsPage from './components/ShopsPages/MotorsPage.js'
 function App() {
   return (
    <BrowserRouter>
@@ -21,8 +24,9 @@ function App() {
       <Route path='/Shops' element={<Shops />}/>
       <Route path='/Contact' element={<Contact/>} />
       <Route path="/Courses" element={<Courses />}/>
-
-      
+      <Route path="/SensorsPage" element={<SensorsPage />}/>
+      <Route path="/MicrocontrollersPage" element={<MicrocontrollersPage />}/>
+      <Route path="/MotorsPage" element={<MotorsPage/>}/>
       
       <Route path='/IOTCourse' element={<ProtectedRoute><IOTCourse/></ProtectedRoute>}/>
       <Route path='/Electronics' element={<ProtectedRoute><Electronics/></ProtectedRoute>} />

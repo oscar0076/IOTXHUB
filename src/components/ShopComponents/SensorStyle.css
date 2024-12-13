@@ -1,0 +1,56 @@
+.equipp {
+  display: flex;
+  flex-direction: column; /* Organiser uniquement les enfants de .equipp en colonne */
+  align-items: center; /* Centrer horizontalement */
+  padding: 20px;
+  background: linear-gradient(to bottom, #000000, #01fffb 50%, #000000); /* Noir → Cyan → Noir */
+  color: #ffffff; /* Texte blanc pour le contraste */
+  border-bottom: 1px solid #01fffb;
+}
+
+.equipp p {
+  font-size: 3rem; /* Taille du titre */
+  margin: 0; /* Pas d'espace au-dessus ni en dessous */
+ 
+  text-align: center; 
+  font-family: 'Black Ops One', sans-serif;/* Centrer le texte */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacement entre l'input et l'icône */
+  background-color: #000000;
+  border: 1px solid #01fffb;
+  border-radius: 30px;
+  padding: 3px;
+  margin-top: 20px;
+  margin-bottom: 69px; /* Espacement entre "Sensors" et la barre de recherche */
+  width: 100%; /* Optionnel : étendre la barre sur toute la largeur */
+  max-width: 400px; /* Optionnel : largeur maximale de la barre */
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #ffffff;
+  flex: 1;
+ /* Smooth transition on focus */ /* Faire en sorte que l'input prenne toute la place disponible */
+}
+
+
+
+.product-sale {
+  padding: 20px;
+  background-color: #010000;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 100px;
+  justify-content: center;
+}

@@ -11,9 +11,7 @@ import CoursesCards from '../components/CoursesCards';
 import '../stylehome.css';
 
 const Courses = () => {
-  const history = useNavigate();
-
-
+ 
 
   return (
     <div className="App">
