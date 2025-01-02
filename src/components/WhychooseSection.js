@@ -11,15 +11,15 @@ function WhyChooseSection() {
           <p>Best IoT and ROBOTICS equipment are available here</p>
         </div>
         <div className={styles.feature}>
-          <img src="/images/icons/online-learning (1).png" alt="online-learning" width="25" />
+          <img src="/images/icons/onlinelearning1.png" alt="online-learning" width="25" />
           <p>The most effective online courses tailored to your needs</p>
         </div>
         <div className={styles.feature}>
-          <img src="/images/icons/trustworthiness (1).png" alt="trustworthiness" width="25" />
+          <img src="/images/icons/trustworthiness1.png" alt="trustworthiness" width="25" />
           <p>The most qualified trainers from around the world</p>
         </div>
         <div className={styles.feature}>
-          <img src="/images/icons/crowd-of-users.png" alt="crowd-of-users" width="25" />
+          <img src="/images/icons/crowdofusers.png" alt="crowd-of-users" width="25" />
           <p>The ultimate platform for all IOT and ROBOTICS clubs</p>
         </div>
       </div>

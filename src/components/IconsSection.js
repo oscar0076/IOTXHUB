@@ -13,7 +13,7 @@ function IconsSection() {
       </div>
       
       <div className={styles.icon}>
-        <img src="/images/icons/crowd-of-users.png" alt="Users" width="40" height="40" />
+        <img src="/images/icons/crowdofusers.png" alt="Users" width="40" height="40" />
         <div>
           <p>100k +</p>
           <p>Worldwide Users</p>

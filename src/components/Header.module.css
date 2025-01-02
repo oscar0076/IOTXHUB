@@ -37,6 +37,8 @@ nav ul li a:hover {
     border-radius: 20px;       /* Optional: rounded corners for the input field */
     box-shadow: inset 0 -2px 5px rgba(0, 255, 255, 0.7); /* 3D cyan shadow */
     transition: all 0.3s ease; /* Smooth transition on focus */
+    
+    
 }
 
 .searchBar input[type="text"]::placeholder {

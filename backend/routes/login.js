@@ -9,7 +9,7 @@ router.post('/login', async (req, res) => {
 
   // Vérification des champs requis
   if (!email || !password) {
-    return res.status(400).json({ error: 'Email et mot de passe sont requis.' });
+    return res.status(400).json({ error: 'Email and password are required.' });
   }
 
   try {
@@ -17,19 +17,19 @@ router.post('/login', async (req, res) => {
     const user = await User.findOne({ email });
 
     if (!user) {
-      return res.status(401).json({ error: 'Utilisateur non trouvé.' });
+      return res.status(401).json({ error: 'User not found.' });
     }
 
     // Comparer le mot de passe (si hashé, utiliser bcrypt pour vérifier le hash)
     if (user.password !== password) {
-      return res.status(401).json({ error: 'Mot de passe incorrect.' });
+      return res.status(401).json({ error: 'Incorrect password.' });
     }
 
     // Si l'utilisateur est trouvé et le mot de passe est correct
-    res.status(200).json({ message: 'Connexion réussie', user });
+    res.status(200).json({ message: 'Login successful.', user });
   } catch (error) {
-    console.error('Erreur lors de la tentative de connexion :', error);
-    res.status(500).json({ error: 'Erreur interne du serveur.' });
+    console.error('Error during login attempt:', error);
+    res.status(500).json({ error: 'Internal server error.' });
   }
 });
 

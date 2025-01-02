@@ -34,7 +34,7 @@ const SignUpPart = () => {
             }
         } catch (error) {
             console.error('Erreur lors de l\'inscription :', error);
-            setMessage('Une erreur est survenue. Veuillez réessayer.');
+            setMessage('An error occurred. Please try again.');
         }
     };
 
@@ -42,7 +42,7 @@ const SignUpPart = () => {
         <div className={style.Sign}>
             <section className={style.Bloc}>
             <img src="/images/login/Capture.png" alt="Bloc" />
-            <form onSubmit={handleSubmit}>
+            <form className={style.Signform} onSubmit={handleSubmit}>
                 <div className={style.NameContainer}>  
                     <div>
                         <label htmlFor="text">Name :</label>

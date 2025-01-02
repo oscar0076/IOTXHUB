@@ -8,14 +8,14 @@ router.post('/signup', async (req, res) => {
 
     // Validation de base
     if (!name || !email || !password) {
-        return res.status(400).json({ error: 'Tous les champs sont requis.' });
+        return res.status(400).json({ error: 'All fields are required.' });
     }
 
     try {
         // Vérifier si l'utilisateur existe déjà
         const existingUser = await User.findOne({ email });
         if (existingUser) {
-            return res.status(400).json({ error: 'Cet email est déjà utilisé.' });
+            return res.status(400).json({ error: 'This email is already in use.' });
         }
 
         // Créer un nouvel utilisateur
@@ -25,10 +25,10 @@ router.post('/signup', async (req, res) => {
         await newUser.save();
 
         // Réponse de succès
-        res.status(201).json({ message: 'Utilisateur inscrit avec succès', data: { name, email } });
+        res.status(201).json({ message: 'User successfully registered.', data: { name, email } });
     } catch (err) {
         console.error('Erreur lors de l\'inscription :', err);
-        res.status(500).json({ error: 'Une erreur est survenue lors de l\'inscription' });
+        res.status(500).json({ error: 'An error occurred during registration.' });
     }
 });
 

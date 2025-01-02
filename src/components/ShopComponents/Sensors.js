@@ -47,13 +47,13 @@ const ProductSaleSection = () => {
     },
     {
       imgSrc: "/images/sensors/tilt.webp",
-      title: "Sparkfun Electronics",
+      title: "Sparkfun",
       description: "Tilt Sensor - AT407",
       price: "5DT",
     },
     {
       imgSrc: "/images/sensors/temperature.webp",
-      title: "Sparkfun Electronics",
+      title: "Sparkfun",
       description: "Temperature Sensor - TMP36",
       price: "6DT",
     },

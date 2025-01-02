@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './ContactSection.module.css'
 
 function ContactSection() {
@@ -13,7 +14,9 @@ function ContactSection() {
         <p>
           Don't miss this chance to level up your skills in robotics and IoT—join our platform today for expert-led courses, resources, and a community ready to support your journey!
         </p>
+        <Link to="/Contact">
         <button>Contact Us</button>
+        </Link>
       </div>
       <img src="/images/1-removebg-preview.png" alt="IOTIXHUB Logo" height="500px" />
     </section>

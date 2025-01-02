@@ -23,7 +23,7 @@ const Microcontrollers = () => {
         },
         {
           imgSrc: "/images/microcontrollers/micro4.webp",
-          title: "Revolution Education (PICAXE)",
+          title: "Revolution",
           description: "PICAXE-20M2 Microcontroller Chip",
           price: "20DT",
         },

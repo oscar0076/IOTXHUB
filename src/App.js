@@ -13,6 +13,7 @@ import ProtectedRoute from './components/ProtectedRoute.js' ;
 import SensorsPage from './components/ShopsPages/SensorsPage.js';
 import MicrocontrollersPage from './components/ShopsPages/MicrocontrollersPage.js';
 import MotorsPage from './components/ShopsPages/MotorsPage.js'
+import SearchResults from './pages/SearchResults.js'
 function App() {
   return (
    <BrowserRouter>
@@ -27,11 +28,12 @@ function App() {
       <Route path="/SensorsPage" element={<SensorsPage />}/>
       <Route path="/MicrocontrollersPage" element={<MicrocontrollersPage />}/>
       <Route path="/MotorsPage" element={<MotorsPage/>}/>
+      <Route path="/search" element={<SearchResults />} />
       
       <Route path='/IOTCourse' element={<ProtectedRoute><IOTCourse/></ProtectedRoute>}/>
       <Route path='/Electronics' element={<ProtectedRoute><Electronics/></ProtectedRoute>} />
       <Route path='/Robots' element={<ProtectedRoute><Robots/></ProtectedRoute>} />
-
+      
 
    </Routes>
    </BrowserRouter>

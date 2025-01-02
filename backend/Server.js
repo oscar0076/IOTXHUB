@@ -1,10 +1,13 @@
 const express = require('express');
 const path = require('path');
+const dotenv = require('dotenv');
 const bodyParser= require('body-parser')
 const cors = require('cors');
 const app = express();
 const signupRoute = require('./routes/signup');
 const loginRoutes = require('./routes/login');
+const orderRoutes = require('./routes/orderRoutes');
+dotenv.config();
 
 // Middleware pour les routes
 app.use(express.json()); // Parser JSON
@@ -17,6 +20,8 @@ app.use(cors({
 
 app.use('/api', signupRoute); // Ajouter la route d'inscription
 app.use('/api', loginRoutes);
+app.use('/api', orderRoutes);
+
 
 const connectDB = require('./config/config');
 // Connecter à MongoDB
